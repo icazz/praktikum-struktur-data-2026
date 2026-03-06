@@ -12,13 +12,13 @@ private:
             return;
         }
 
-        int tipe;
-        cout << "Pilih Sumber Panen (1. Petani Lokal, 2. Perusahaan): ";
-        cin >> tipe; cin.ignore();
-
         double b, h;
         cout << "Berat (kg): "; cin >> b; cin.ignore();
         cout << "Harga (per kg): "; cin >> h; cin.ignore();
+
+        string tipe;
+        cout << "Pilih Sumber Panen (1. Petani Lokal, 2. Perusahaan): ";
+        cin >> tipe; cin.ignore();
 
         if (tipe == 1) {
             string n;
